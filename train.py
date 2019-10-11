@@ -24,10 +24,11 @@ for label in listdir(LETTERS_FOLDER):
         image = cv2.resize(image, MODEL_SHAPE)
         # Expand dimensions to make Keras happy
         image = np.expand_dims(image, axis=2)
-        data.append(image)
-        labels.append(label)
+        data.append(image) # pixel matrix
+        labels.append(label) # answer
 
-# Normalize the data so every value lies between zero and one
+
+# Normalize the data so every value lies between zero and one, easier processing by the neural network
 data = np.array(data, dtype="float") / 255.0
 labels = np.array(labels)
 
@@ -36,11 +37,16 @@ labels = np.array(labels)
                                                       test_size=0.25, random_state=0)
 
 # Binarize the labels
+# Keras can’t work with “Q”, “W”,… labels directly, we need to binarize these:
+# every label is converted to an output vertex with each index corresponding to
+# one possible character, with its value set to one or zero, so that “Q” would become
+# “[1, 0, 0, 0,…],” “W” would become “[0, 1, 0, 0,…],” and so on.
 lb = LabelBinarizer().fit(Y_train)
 Y_train = lb.transform(Y_train)
 Y_test = lb.transform(Y_test)
 
 # Save the binarization for later
+# We’ll also need it to perform the conversion back to characters again during application of the model
 with open(LABELS_FILE, "wb") as f:
     pickle.dump(lb, f)
 

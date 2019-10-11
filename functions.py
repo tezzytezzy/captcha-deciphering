@@ -52,7 +52,7 @@ def process_image(image):
 
 def get_contours(image):
     # Retrieve contours
-    _, cnts, _ = cv2.findContours(image.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+    cnts, _ = cv2.findContours(image.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
     # Remove overlapping contours
     contours = remove_overlaps(cnts)
     # Sort by size, keep only the first NR_CHARACTERS

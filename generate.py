@@ -10,6 +10,6 @@ image = ImageCaptcha()
 
 for i in range(NR_CAPTCHAS):
     captcha = ''.join([choice(CHARACTERS) for c in range(NR_CHARACTERS)])
-    filename = os.path.join(CAPTCHA_FOLDER, '{}_{}.png'.format(captcha, i))
+    filename = os.path.join(CAPTCHA_FOLDER, '{}_{}.jpg'.format(captcha, i))
     image.write(captcha, filename)
     print('Generated:', captcha)

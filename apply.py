@@ -14,8 +14,11 @@ model = load_model(MODEL_FILE)
 # We simply pick a random training image here to illustrate how predictions work.
 # In a real setup, you'd obviously plug this into your web scraping pipeline
 # and pass a "live" captcha image
-image_files = list(glob(os.path.join(CAPTCHA_FOLDER, '*.png')))
-image_file = choice(image_files)
+
+#image_files = list(glob(os.path.join(CAPTCHA_FOLDER, '*.jpg')))
+
+#image_file = choice(image_files)
+image_file = "captcha_image.jpg"
 
 print('Testing:', image_file)
 

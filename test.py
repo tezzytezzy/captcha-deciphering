@@ -2,7 +2,8 @@ import cv2
 import numpy as np
 
 # Change this to one of your generated images:
-image_file = 'example.png'
+#image_file = 'example.png' 
+image_file = 'generated_images/ZYNWI_933.jpg'
 
 image = cv2.imread(image_file)
 cv2.imshow('Original image', image)
@@ -21,7 +22,7 @@ denoised = cv2.dilate(denoised, kernel, iterations=1)
 cv2.imshow('Denoised', denoised)
 
 # Now find contours and overlay them over our original image
-_, cnts, _ = cv2.findContours(denoised.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+cnts, _ = cv2.findContours(denoised.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
 contoured = image.copy()
 cv2.drawContours(contoured, cnts, contourIdx=-1, color=(255, 0, 0), thickness=-1)
 cv2.imshow('Contours', contoured)
