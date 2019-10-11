@@ -2,10 +2,10 @@
 
 ## Objective
 Practical implementation of:
-1. Convolutional Neural Network (Deep Learning) via [Keras](https://keras.io/), and
+1. Convolutional Neural Network (Deep Learning) via [Keras](https://keras.io/) with [TensorFlow](https://www.tensorflow.org/) backend (default), and
 2. Web Data Mining via [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)*
 
-*I mulled over [Scrapy](https://scrapy.org/) and [Selenium with Webdriver](https://www.seleniumhq.org/), but settled on Beautiful Soup for its simplicity and ease of use.
+*I mulled over [Scrapy](https://scrapy.org/) and [Selenium](https://www.seleniumhq.org/), but settled on Beautiful Soup for its simplicity and ease of use.
 
 ## Installation
 The following packages to be installed:
