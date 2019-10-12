@@ -4,7 +4,7 @@ from glob import glob
 from functions import *
 from constants import *
 
-image_files = glob(os.path.join(CAPTCHA_FOLDER, '*.jpg'))
+image_files = glob(os.path.join(CAPTCHA_FOLDER, '*.png'))
 
 for image_file in image_files:
     print('Now doing file:', image_file)

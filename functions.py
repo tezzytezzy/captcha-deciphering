@@ -5,6 +5,10 @@ from constants import *
 
 def overlaps(contour1, contour2, threshold=0.8):
     # Check whether two contours' bounding boxes overlap
+    # Starting from a list of contours, check whether there is a significant degree of overlap
+    #  between two distinct contours, in which case we only retain the largest one. Next, we order
+    #  the contours based on their size, take the first n contours, and order these on the horizontal
+    #  axis, from left to right (with n being the number of characters in a CAPTCHA). This still might lead to fewer contours
     area1 = contour1['w'] * contour1['h']
     area2 = contour2['w'] * contour2['h']
     left = max(contour1['x'], contour2['x'])

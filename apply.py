@@ -16,9 +16,8 @@ model = load_model(MODEL_FILE)
 # and pass a "live" captcha image
 
 #image_files = list(glob(os.path.join(CAPTCHA_FOLDER, '*.jpg')))
-
 #image_file = choice(image_files)
-image_file = "captcha_image.jpg"
+image_file = FILE_NAME
 
 print('Testing:', image_file)
 
