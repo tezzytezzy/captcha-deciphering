@@ -9,4 +9,4 @@ FILE_NAME = "captcha_image.png" # the retrieved image from a web site
 MODEL_FILE = 'model.hdf5'
 LABELS_FILE = 'labels.dat'
 
-MODEL_SHAPE = (100, 100) # Adjust according to the target CAPTCHA pixels. Default seems to be 160 x 60
+MODEL_SHAPE = (100, 100)
