@@ -25,28 +25,30 @@ scikit-learn              0.21.3           py37hd81dba3_0
 3. Using the Keras library to train a model with the letter samples collected above for each letter.
 
 ## Result
-58% of accuracy.
+63% of accuracy.
 
 ```bash
-1432/1432 [==============================] - 34s 24ms/step - loss: 2.9809 - acc: 0.2556 - val_loss: 2.2488 - val_acc: 0.4561
+Train on 2876 samples, validate on 959 samples
+Epoch 1/10
+2876/2876 [==============================] - 69s 24ms/step - loss: 2.2493 - acc: 0.4360 - val_loss: 1.6329 - val_acc: 0.6163
 Epoch 2/10
-1432/1432 [==============================] - 33s 23ms/step - loss: 1.5028 - acc: 0.6229 - val_loss: 1.7459 - val_acc: 0.5879
+2876/2876 [==============================] - 69s 24ms/step - loss: 1.0487 - acc: 0.7406 - val_loss: 1.7075 - val_acc: 0.5912
 Epoch 3/10
-1432/1432 [==============================] - 34s 24ms/step - loss: 0.6440 - acc: 0.8387 - val_loss: 1.9391 - val_acc: 0.5732
+2876/2876 [==============================] - 72s 25ms/step - loss: 0.4068 - acc: 0.8873 - val_loss: 2.0714 - val_acc: 0.6246
 Epoch 4/10
-1432/1432 [==============================] - 34s 24ms/step - loss: 0.1497 - acc: 0.9588 - val_loss: 2.5291 - val_acc: 0.5816
+2876/2876 [==============================] - 76s 27ms/step - loss: 0.1239 - acc: 0.9677 - val_loss: 2.4089 - val_acc: 0.6131
 Epoch 5/10
-1432/1432 [==============================] - 35s 25ms/step - loss: 0.0699 - acc: 0.9784 - val_loss: 2.6889 - val_acc: 0.5565
+2876/2876 [==============================] - 75s 26ms/step - loss: 0.0793 - acc: 0.9812 - val_loss: 2.5761 - val_acc: 0.6027
 Epoch 6/10
-1432/1432 [==============================] - 35s 25ms/step - loss: 0.0241 - acc: 0.9916 - val_loss: 2.9378 - val_acc: 0.5544
+2876/2876 [==============================] - 77s 27ms/step - loss: 0.0281 - acc: 0.9924 - val_loss: 2.6144 - val_acc: 0.6173
 Epoch 7/10
-1432/1432 [==============================] - 36s 25ms/step - loss: 0.0317 - acc: 0.9888 - val_loss: 2.7667 - val_acc: 0.5858
+2876/2876 [==============================] - 78s 27ms/step - loss: 0.0249 - acc: 0.9941 - val_loss: 2.6915 - val_acc: 0.6236
 Epoch 8/10
-1432/1432 [==============================] - 36s 25ms/step - loss: 0.0250 - acc: 0.9944 - val_loss: 2.7805 - val_acc: 0.5941
+2876/2876 [==============================] - 76s 26ms/step - loss: 0.0348 - acc: 0.9927 - val_loss: 2.6212 - val_acc: 0.6194
 Epoch 9/10
-1432/1432 [==============================] - 36s 25ms/step - loss: 0.0114 - acc: 0.9986 - val_loss: 2.7468 - val_acc: 0.6025
+2876/2876 [==============================] - 76s 27ms/step - loss: 0.0247 - acc: 0.9944 - val_loss: 2.6898 - val_acc: 0.6298
 Epoch 10/10
-1432/1432 [==============================] - 36s 25ms/step - loss: 0.0022 - acc: 0.9993 - val_loss: 2.9266 - val_acc: 0.5816
+2876/2876 [==============================] - 75s 26ms/step - loss: 0.0128 - acc: 0.9983 - val_loss: 2.8467 - val_acc: 0.6319
 ```
 
 ## Reference
