@@ -1,4 +1,4 @@
-# captcha-deciphering
+# Captcha Deciphering
 
 ## Objective
 Practical implementation of:
